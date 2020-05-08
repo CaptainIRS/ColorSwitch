@@ -1,0 +1,130 @@
+html, body {
+    margin: 0 !important;
+    background-color: black;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: Russo;
+    src:url("../fonts/RussoOne.ttf");
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.left {
+    left: 0;
+    border-right: 1px red solid;
+}
+
+.right {
+    right: 0;
+}
+
+
+#game_bar {
+    position: relative;
+    width: 100%;
+    background-color: #00000000;
+}
+
+#score {
+    font-family: Russo;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 72px;
+    color: white;
+}
+
+#power_up_timer {
+    font-family: Russo;
+    display: inline-block;
+    font-size: 32px;
+    color: hotpink;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+#pause {
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 36px;
+    height: 36px;
+}
+
+#multiplier {
+    font-family: Russo;
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-size: 32px;
+    color: yellow;
+}
+
+#popup{
+    background-color:rgba(255,255,255,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:inherit;
+    z-index:10000;
+}
+#popup #helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+
+#popupContent {
+    background-color: #000;
+    box-shadow: 10px 10px 60px #444;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+
+#menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    height: auto;
+    font-family: Russo;
+    border: 1px white solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px white;
+    padding: 15px;
+    font-size: 32px;
+    max-width: 400px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    text-align: center;
+}

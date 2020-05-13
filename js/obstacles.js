@@ -38,28 +38,28 @@ class Circle extends Obstacle {
             this.y,
             100,
             this.angle,
-            this.angle + 1 / 2 * Math.PI);
+            this.angle + 1 / 2 * Math.PI + 0.00001);
 
         this.arcTo('#c636ff',
             this.x,
             this.y,
             100,
             this.angle + 1 / 2 * Math.PI,
-            this.angle + Math.PI);
+            this.angle + Math.PI + 0.00001);
 
         this.arcTo('#ffab1b',
             this.x,
             this.y,
             100,
             this.angle + Math.PI,
-            this.angle + 3 / 2 * Math.PI);
+            this.angle + 3 / 2 * Math.PI + 0.00001);
 
         this.arcTo('#6bdcff',
             this.x,
             this.y,
             100,
             this.angle + 3 / 2 * Math.PI,
-            this.angle + 2 * Math.PI);
+            this.angle + 2 * Math.PI + 0.00001);
     }
 
     update() {
@@ -115,21 +115,21 @@ class Concentric extends Obstacle {
 
     draw() {
         this.context.lineCap = "butt";
-        this.arcTo('#F00', this.x, this.y, 100, this.angle, this.angle + 1 / 2 * Math.PI);
+        this.arcTo('#F00', this.x, this.y, 100, this.angle, this.angle + 1 / 2 * Math.PI + 0.00001);
 
-        this.arcTo('#c636ff', this.x, this.y, 100, this.angle + 1 / 2 * Math.PI, this.angle + Math.PI);
+        this.arcTo('#c636ff', this.x, this.y, 100, this.angle + 1 / 2 * Math.PI, this.angle + Math.PI + 0.00001);
 
-        this.arcTo('#ffab1b', this.x, this.y, 100, this.angle + Math.PI, this.angle + 3 / 2 * Math.PI);
+        this.arcTo('#ffab1b', this.x, this.y, 100, this.angle + Math.PI, this.angle + 3 / 2 * Math.PI + 0.00001);
 
-        this.arcTo('#6bdcff', this.x, this.y, 100, this.angle + 3 / 2 * Math.PI, this.angle + 2 * Math.PI);
+        this.arcTo('#6bdcff', this.x, this.y, 100, this.angle + 3 / 2 * Math.PI, this.angle + 2 * Math.PI + 0.00001);
 
-        this.arcTo('#F00', this.x, this.y, 130, this.angle2, this.angle2 + 1 / 2 * Math.PI);
+        this.arcTo('#F00', this.x, this.y, 130, this.angle2, this.angle2 + 1 / 2 * Math.PI + 0.00001);
 
-        this.arcTo('#c636ff', this.x, this.y, 130, this.angle2 + 1 / 2 * Math.PI, this.angle2 + Math.PI);
+        this.arcTo('#c636ff', this.x, this.y, 130, this.angle2 + 1 / 2 * Math.PI, this.angle2 + Math.PI + 0.00001);
 
-        this.arcTo('#ffab1b', this.x, this.y, 130, this.angle2 + Math.PI, this.angle2 + 3 / 2 * Math.PI);
+        this.arcTo('#ffab1b', this.x, this.y, 130, this.angle2 + Math.PI, this.angle2 + 3 / 2 * Math.PI + 0.00001);
 
-        this.arcTo('#6bdcff', this.x, this.y, 130, this.angle2 + 3 / 2 * Math.PI, this.angle2 + 2 * Math.PI);
+        this.arcTo('#6bdcff', this.x, this.y, 130, this.angle2 + 3 / 2 * Math.PI, this.angle2 + 2 * Math.PI + 0.00001);
     }
 
     update() {
